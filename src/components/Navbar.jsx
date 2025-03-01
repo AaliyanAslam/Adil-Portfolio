@@ -1,0 +1,28 @@
+import React from 'react';
+export const Navbar = () => {
+  return (
+    <div className="container flex justify-between border border-gray-500 m-4 w-full h-16 items-center px-6 py-2 rounded-2xl text-white">
+      
+    
+      <div className='dev-name'>AADIL ASLAM</div>
+
+      
+      <div className="flex space-x-6">
+     
+        <a href="" className='text-xs	 links'>SERVICES</a>
+        <a href="" className='text-xs links'>TECHNOLOGIOES</a>
+        <a href="" className='text-xs links'>PORTFOLIO</a>
+        <a href="" className='text-xs links'>CONTACT</a>
+      </div>
+
+    
+      <div className='languages'>
+
+<button>languages</button>
+
+        
+      </div>
+
+    </div>
+  );
+};
