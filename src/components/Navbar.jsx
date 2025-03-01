@@ -6,19 +6,25 @@ export const Navbar = () => {
     
       <div className='dev-name'>AADIL ASLAM</div>
 
-      
       <div className="flex space-x-6">
-     
-        <a href="" className='text-xs	 links'>SERVICES</a>
-        <a href="" className='text-xs links'>TECHNOLOGIOES</a>
-        <a href="" className='text-xs links'>PORTFOLIO</a>
-        <a href="" className='text-xs links'>CONTACT</a>
-      </div>
-
+  <a href="" className="text-xs links pr-4">
+    <span className="nav-link">SERVICES</span>
+  </a>
+  <a href="" className="text-xs links pr-4">
+    <span className="nav-link">TECHNOLOGIES</span>
+  </a>
+  <a href="" className="text-xs links pr-4">
+    <span className="nav-link">PORTFOLIO</span>
+  </a>
+  <a href="" className="text-xs links">
+    <span className="nav-l">CONTACT</span>
+  </a>
+</div>
+ 
     
-      <div className='languages'>
+      <div className='languages'> 
 
-<button>languages</button>
+<button>LANGUAGES</button>
 
         
       </div>
