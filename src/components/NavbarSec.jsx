@@ -7,7 +7,12 @@ export const NavbarSec = () => {
     <>
     <div class="relative w-full h-screen flex  bg-gray-900">
         <Navbar />
+        
+
+      <Intro />
       </div>
+      
+
     </>
   )
 }
