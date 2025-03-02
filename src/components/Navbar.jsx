@@ -17,7 +17,7 @@ export const Navbar = () => {
     <span className="nav-link">PORTFOLIO</span>
   </a>
   <a href="" className="text-xs links">
-    <span className="nav-l">CONTACT</span>
+    <span className="nav-link">CONTACT</span>
   </a>
 </div>
  
