@@ -9,7 +9,6 @@ export const NavbarSec = () => {
         <Navbar />
         
 
-      <Intro />
       </div>
       
 
