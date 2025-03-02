@@ -17,6 +17,12 @@ export const Services = () => {
         {/* Services flow layout */}
         <div className="flex flex-col items-center">
           {/* First service (left) */}
+          <div className=" absolute left-230 top-49">
+            <div className="w-0 border h-28.5 opacity-15"></div>
+            </div>
+          <div className=" absolute left-57.5 top-98">
+            <div className="w-0 border h-45 opacity-15"></div>
+            </div>
           <div className="flex w-full justify-start mb-8">
             <div className="w-full md:w-1/2 lg:w-2/5 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700 hover:border-purple-500 transition duration-300">
               <div className="flex items-center mb-4">
@@ -46,13 +52,26 @@ export const Services = () => {
                 and work smoothly on any device.
               </p>
             </div>
+            <div className="flex items-center">
+            <div className="w-115 border h-0 opacity-15">
+
+</div>
+            </div>
+          
           </div>
+          
 
           {/* Connector line 1 */}
-          <div className="w-2 h-16 bg-blue-500 md:ml-[20%]"></div>
-
+      
           {/* Second service (right) */}
+         
           <div className="flex w-full justify-end mb-8">
+          <div className="flex items-center">
+            <div className="w-115 border h-0 opacity-15">
+
+</div>
+            </div>
+          
             <div className="w-full md:w-1/2 lg:w-2/5 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700 hover:border-purple-500 transition duration-300">
               <div className="flex items-center mb-4">
                 <span className="text-blue-400 text-2xl mr-3">

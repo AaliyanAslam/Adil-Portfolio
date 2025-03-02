@@ -19,21 +19,20 @@ body, html {
   }
 
 
-button {
-    --border-radius: 15px;
+  .custom-button {
+    --border-radius: 10px;
     --border-width: 2px;
-    appearance: none;
     position: relative;
-    padding: 1em 2em;
     border: 0;
+    background: transparent; /* Ensure background doesn't obscure content */
     font-family: "Roboto", Arial, "Segoe UI", sans-serif;
     font-size: 12px;
     font-weight: 500;
-    color: #fff;
-    z-index: 2;
-   }
-   
-   button::after {
+    color: #fff; /* White text/icons */
+    z-index: 1; /* Base z-index for button content */
+  }
+  
+  .custom-button::after {
     --m-i: linear-gradient(#000, #000);
     --m-o: content-box, padding-box;
     content: "";
@@ -45,14 +44,14 @@ button {
     padding: var(--border-width);
     border-radius: var(--border-radius);
     background-image: conic-gradient(
-           #488cfb,
-           #29dbbc,
-           #ddf505,
-           #ff9f0e,
-           #e440bb,
-           #655adc,
-           #488cfb
-       );
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
     -webkit-mask-image: var(--m-i), var(--m-i);
     mask-image: var(--m-i), var(--m-i);
     -webkit-mask-origin: var(--m-o);
@@ -63,23 +62,24 @@ button {
     filter: hue-rotate(0);
     animation: rotate-hue linear 500ms infinite;
     animation-play-state: paused;
-   }
-   
-   button:hover::after {
+    z-index: -1; /* Place behind content */
+  }
+  
+  .custom-button:hover::after {
     animation-play-state: running;
-   }
-   
-   @keyframes rotate-hue {
+  }
+  
+  @keyframes rotate-hue {
     to {
-     filter: hue-rotate(1turn);
+      filter: hue-rotate(1turn);
     }
-   }
-   
-   button,
-   button::after {
+  }
+  
+  .custom-button,
+  .custom-button::after {
     box-sizing: border-box;
-   }
-   
-   button:active {
+  }
+  
+  .custom-button:active {
     --border-width: 3px;
-   }
+  }
