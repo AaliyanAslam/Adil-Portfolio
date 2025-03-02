@@ -1,15 +1,16 @@
 import React from 'react'
 import { Navbar } from "../components/Navbar";
+import { NavCont } from "../components/NavCont";
 
 
 export const NavbarSec = () => {
   return (
     <>
-    <div class="relative w-full h-screen flex  bg-gray-900">
+    
         <Navbar />
+        <NavCont />
 
-
-      </div>
+   
 
 
     </>

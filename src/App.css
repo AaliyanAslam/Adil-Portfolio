@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
 
-.links{
-    font-family: 'Roboto';
-}
-.links:hover{
-    color: #0c5bb4;
-}
-.dev-name{
-    font-family: 'Roboto';
-}
-.languages{
-    font-family: 'Roboto';
-}
+body, html {
+    margin: 0;
+    padding: 0;
+   
 
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+    background-color: #101828;
+  }
 
 
 button {
