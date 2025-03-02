@@ -19,10 +19,10 @@ export const Services = () => {
           {/* First service (left) */}
           <div className=" absolute left-230 top-49">
             <div className="w-0 border h-28.5 opacity-15"></div>
-            </div>
+          </div>
           <div className=" absolute left-57.5 top-98">
-            <div className="w-0 border h-45 opacity-15"></div>
-            </div>
+            <div className=" hidden md:block w-0 border h-45 opacity-15"></div>
+          </div>
           <div className="flex w-full justify-start mb-8">
             <div className="w-full md:w-1/2 lg:w-2/5 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700 hover:border-purple-500 transition duration-300">
               <div className="flex items-center mb-4">
@@ -47,31 +47,25 @@ export const Services = () => {
                 </h2>
               </div>
               <p className="text-gray-300">
-                I create websites based on your ready-made design. Whether it's a
-                landing page or a business card website, I'll make it look great
-                and work smoothly on any device.
+                I create websites based on your ready-made design. Whether it's
+                a landing page or a business card website, I'll make it look
+                great and work smoothly on any device.
               </p>
             </div>
             <div className="flex items-center">
-            <div className="w-115 border h-0 opacity-15">
-
-</div>
+              <div className="hidden md:block w-115 border h-0 opacity-15"></div>
             </div>
-          
           </div>
-          
 
           {/* Connector line 1 */}
-      
-          {/* Second service (right) */}
-         
-          <div className="flex w-full justify-end mb-8">
-          <div className="flex items-center">
-            <div className="w-115 border h-0 opacity-15">
 
-</div>
+          {/* Second service (right) */}
+
+          <div className="flex w-full justify-end mb-8">
+            <div className="flex items-center">
+              <div className="hidden md:block w-115 border h-0 opacity-15"></div>
             </div>
-          
+
             <div className="w-full md:w-1/2 lg:w-2/5 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700 hover:border-purple-500 transition duration-300">
               <div className="flex items-center mb-4">
                 <span className="text-blue-400 text-2xl mr-3">
@@ -95,8 +89,8 @@ export const Services = () => {
                 </h2>
               </div>
               <p className="text-gray-300">
-                I can design your website from scratch. I create modern, simple, and
-                user-friendly designs that match your brand and goals.
+                I can design your website from scratch. I create modern, simple,
+                and user-friendly designs that match your brand and goals.
               </p>
             </div>
           </div>
@@ -129,8 +123,9 @@ export const Services = () => {
                 </h2>
               </div>
               <p className="text-gray-300">
-                I build websites on WordPress, making them easy to update and manage.
-                It's a great choice for blogs, small businesses, or portfolios.
+                I build websites on WordPress, making them easy to update and
+                manage. It's a great choice for blogs, small businesses, or
+                portfolios.
               </p>
             </div>
           </div>
