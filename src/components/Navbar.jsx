@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-
+import { Link } from 'react-router-dom';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#services", label: "SERVICES" },
-    { href: "#technologies", label: "TECHNOLOGIES" },
+    { href: "/about", label: "SERVICES" },
+    { href: "/contact", label: "TECHNOLOGIES" },
     { href: "#portfolio", label: "PORTFOLIO" },
     { href: "#contact", label: "CONTACT" },
   ];
@@ -31,14 +31,16 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:items-center lg:space-x-6">
+        
           {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-sm hover:text-purple-400 transition-colors duration-300"
-            >
-              {item.label}
-            </a>
+            // <a
+            //   key={item.label}
+            //   href={item.href}
+            //   className="text-sm hover:text-purple-400 transition-colors duration-300"
+            // >
+            //   {item.label}
+            // </a>
+            <Link to={item.href}>{item.label}</Link>
           ))}
           <button className=" custom-button bg-transparent border border-gray-500 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition duration-300 ml-6">
             ENG <span className="text-purple-400">▼</span>
