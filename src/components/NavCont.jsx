@@ -21,7 +21,7 @@ export const NavCont = () => {
               BACKEND DEVELOPER
             </h1>
             <p className="text-lg md:text-base mb-6 max-w-md mt-8 md:mt-16">
-              I am Aadil - a web developer with a passion for creating beautiful and responsive websites.
+              I am Aadil - Full-stack web developer with a passion for software architecture and programming best practices. Over the last 2 years, I have developed and maintained complex Web apps using mainly Laravel . I love writing clean code and talking and writing about it .
             </p>
             <a
               href="#portfolio"

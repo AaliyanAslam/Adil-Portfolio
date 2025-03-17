@@ -43,13 +43,11 @@ export const Services = () => {
                   </svg>
                 </span>
                 <h2 className="text-xl font-semibold text-blue-400">
-                  Website Development
+                Custom Web Application Development
                 </h2>
               </div>
               <p className="text-gray-300">
-                I create websites based on your ready-made design. Whether it's
-                a landing page or a business card website, I'll make it look
-                great and work smoothly on any device.
+              Develop scalable and secure web applications using Laravel and modern JavaScript frameworks like React or Vue.
               </p>
             </div>
             <div className="flex items-center">
@@ -85,12 +83,11 @@ export const Services = () => {
                   </svg>
                 </span>
                 <h2 className="text-xl font-semibold text-blue-400">
-                  Web Design
+                API Development & Integration
                 </h2>
               </div>
               <p className="text-gray-300">
-                I can design your website from scratch. I create modern, simple,
-                and user-friendly designs that match your brand and goals.
+              Design, develop, and integrate RESTful and GraphQL APIs to facilitate seamless communication between web applications and third-party services.
               </p>
             </div>
           </div>
@@ -119,13 +116,11 @@ export const Services = () => {
                   </svg>
                 </span>
                 <h2 className="text-xl font-semibold text-blue-400">
-                  WordPress Development
+                Code Refactoring & Performance Optimization
                 </h2>
               </div>
               <p className="text-gray-300">
-                I build websites on WordPress, making them easy to update and
-                manage. It's a great choice for blogs, small businesses, or
-                portfolios.
+              Refactor existing Laravel applications to improve code quality, performance, and security following best practices.
               </p>
             </div>
           </div>
