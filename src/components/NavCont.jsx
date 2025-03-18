@@ -17,7 +17,7 @@ export const NavCont = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto py-12 px-4">
           {/* Left section: Text and button */}
           <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-left">
-            <h1 className="text-7xl md:text-5xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-7xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-4">
               BACKEND DEVELOPER
             </h1>
             <p className="text-lg md:text-base mb-6 max-w-md mt-8 md:mt-16">
