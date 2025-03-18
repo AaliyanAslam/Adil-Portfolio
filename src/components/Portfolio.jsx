@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Portfolio = ({ projects }) => {
+export const Portfolio = ({ projects = [] }) => {
   return (
     <div className="relative w-full bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8 overflow-hidden" id="portfolio">
       {/* Background */}

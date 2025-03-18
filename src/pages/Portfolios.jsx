@@ -1,15 +1,13 @@
 
 import React from "react";
-import { NavbarSec } from "./components/NavbarSec";
-import { Services } from "./components/Services";
-import  Technology  from "./pages/Technology";
-import { Portfolio } from "./components/Portfolio";
+import { NavbarSec } from "../components/NavbarSec";
+import { Services } from "../components/Services";
+import { Skills } from "../components/Skills";
+import { Portfolio } from "../components/Portfolio";
 import { Routes, Route } from "react-router-dom";
-import Portfolios from "./pages/Portfolios";
 import Erd from "/src/assets/erd.png";
-import Contact from "./pages/Contact";
 
-export default function App() {
+export default function Portfolios() {
   let address =
     "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=pexels-mikebirdy-170811.jpg&fm=jpg";
   const portfolioData = [
@@ -23,13 +21,10 @@ export default function App() {
   ];
   return (
     <>
-      <div>
-      <Routes>
-        <Route path="/" element={<Portfolios />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/Technology" element={<Technology />} />
-      </Routes>
-    </div>
+      <NavbarSec />
+      <Services />
+      <Skills />
+      <Portfolio projects={portfolioData} />
     </>
   );
 }

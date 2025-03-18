@@ -5,10 +5,10 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "/about", label: "SERVICES" },
-    { href: "/contact", label: "TECHNOLOGIES" },
-    { href: "#portfolio", label: "PORTFOLIO" },
-    { href: "#contact", label: "CONTACT" },
+    { href: "about", label: "SERVICES" },
+    { href: "Technology", label: "TECHNOLOGIES" },
+    { href: "portfolio", label: "PORTFOLIO" },
+    { href: "contact", label: "CONTACT" },
   ];
 
   return (
@@ -56,14 +56,8 @@ export const Navbar = () => {
       >
         <div className="flex flex-col p-6 space-y-6 mt-16">
           {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-white text-sm hover:text-purple-400 transition-colors duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
+            <Link to={item.href} key={item.label} className="mr-4">{item.label}</Link>
+          
           ))}
           <button className=" custom-button bg-transparent border border-gray-500 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition duration-300 w-full text-left">
             ENG <span className="text-purple-400">▼</span>
