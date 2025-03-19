@@ -1,5 +1,5 @@
 import React from "react";
-import Image from '../assets/MyImage.png';
+import Image from "../assets/MyImage.png";
 
 export const NavCont = () => {
   return (
@@ -8,8 +8,9 @@ export const NavCont = () => {
         {/* Background with subtle code-like text */}
         <div className="absolute inset-0 bg-gray-900 opacity-90 flex items-center justify-center overflow-hidden">
           <div className="absolute text-gray-600 text-xs opacity-20">
-            <span>console.log</span> <span></span> <span>npm install</span> 
-            <span>class="container"</span> <span>Mobile First</span> <span>/</span>
+            <span>console.log</span> <span></span> <span>npm install</span>
+            <span>class="container"</span> <span>Mobile First</span>{" "}
+            <span>/</span>
           </div>
         </div>
 
@@ -17,11 +18,15 @@ export const NavCont = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto py-12 px-4">
           {/* Left section: Text and button */}
           <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-left">
-            <h1 className="text-7xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-[44px] sm:text-[36px] md:text-[48px] lg:text-[52px] font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-4">
               BACKEND DEVELOPER
             </h1>
             <p className="text-lg md:text-base mb-6 max-w-md mt-8 md:mt-16">
-              I am Aadil - Full-stack web developer with a passion for software architecture and programming best practices. Over the last 2 years, I have developed and maintained complex Web apps using mainly Laravel . I love writing clean code and talking and writing about it .
+              I am Aadil - Full-stack web developer with a passion for software
+              architecture and programming best practices. Over the last 2
+              years, I have developed and maintained complex Web apps using
+              mainly Laravel . I love writing clean code and talking and writing
+              about it .
             </p>
             <a
               href="#portfolio"

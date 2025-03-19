@@ -2,6 +2,7 @@
 import React from "react";
 import { NavbarSec } from "./components/NavbarSec";
 import { Services } from "./components/Services";
+import MyServices from "./pages/MyServices";
 import  Technology  from "./pages/Technology";
 import { Portfolio } from "./components/Portfolio";
 import { Routes, Route } from "react-router-dom";
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/" element={<Portfolios />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Technology" element={<Technology />} />
+        <Route path="/expertise" element={<MyServices />} />
       </Routes>
     </div>
     </>
