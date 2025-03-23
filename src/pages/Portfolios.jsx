@@ -6,6 +6,7 @@ import { Skills } from "../components/Skills";
 import { Portfolio } from "../components/Portfolio";
 import { Routes, Route } from "react-router-dom";
 import Erd from "/src/assets/erd.png";
+import vidrec from "/src/assets/vidrec.png";
 
 export default function Portfolios() {
   let address =
@@ -17,6 +18,13 @@ export default function Portfolios() {
       image: Erd,
       tech: ["HTML", "CSS", "JS"],
       link : "https://adilaslam1807.github.io/ERD-viewer/"
+    },
+    {
+      title: "Web-Based Video Recorder with Download Feature",
+      description: "A simple yet powerful web-based video recording tool that allows users to record videos using their webcam and download them instantly.",
+      image: vidrec,
+      tech: ["HTML", "CSS", "JS"],
+      link : "https://adilaslam1807.github.io/screen-record-with-webcam/"
     },
   ];
   return (

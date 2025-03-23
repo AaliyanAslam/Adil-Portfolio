@@ -63,7 +63,7 @@ export const NavCont = () => {
                     <circle r="12" cy="12" cx="12"></circle>
                   </svg>
                 </div>
-                <span className="absolute inset-x-0 top-2 text-xs text-slate-500">UserController.php</span>
+                
               </div>
               <div className="mt-5 space-y-1 px-3 pb-10 text-xs font-mono text-violet-400 animate-type">
                 <p><span className="text-pink-400">namespace</span><span className="text-blue-400"> App\Http\Controllers;</span></p>
