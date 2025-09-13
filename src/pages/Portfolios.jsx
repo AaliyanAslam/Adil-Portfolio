@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Erd from "/src/assets/erd.png";
 import vidrec from "/src/assets/vidrec.png";
 import proflacyics from "/src/assets/proflatics-hero.png";
+import proflatics from "/src/assets/prof-latics.png";
 
 export default function Portfolios() {
   let address =
@@ -30,9 +31,9 @@ export default function Portfolios() {
     {
       title: "Proflatics – The Ultimate Social & Professional Networking Platform",
       description: "Proflatics is a Laravel-powered social networking platform that combines the best of social interaction and professional networking. Users can chat in real-time, share images like on Facebook, and uniquely, set up their resumes directly on their profiles—similar to Linktree, but with a professional touch. Whether for personal connections or career growth, SocialConnect provides a seamless and engaging experience.",
-      image: proflacyics,
+      image: proflatics,
       tech: ["HTML", "CSS", "JS"],
-      link : "#"
+      link : "https://www.proflatics.com"
     },
   ];
   return (
