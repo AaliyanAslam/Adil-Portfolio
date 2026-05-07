@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+* {
+  font-family: "Urbanist", sans-serif;
+}
 
 body, html {
     margin: 0;
     padding: 0;
+    font-family: "Urbanist", sans-serif;
    
 
   }
@@ -25,7 +29,7 @@ body, html {
     position: relative;
     border: 0;
     background: transparent; /* Ensure background doesn't obscure content */
-    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-family: "Urbanist", Arial, "Segoe UI", sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: #fff; /* White text/icons */
