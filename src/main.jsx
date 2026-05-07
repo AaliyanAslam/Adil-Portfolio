@@ -1,15 +1,46 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Lenis from 'lenis'
 import './index.css'
 import App from './App.jsx'
 import "./App.css";
 
+function Root() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy()
+    }
+  }, [])
+
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )
+}
+
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-  
-    <App />
- 
-  </BrowserRouter>,
+  <StrictMode>
+    <Root />
+  </StrictMode>,
 )
